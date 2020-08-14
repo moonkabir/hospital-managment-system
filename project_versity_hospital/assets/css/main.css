@@ -1,0 +1,392 @@
+a,
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.particles-js-canvas-el {
+    height: 20% !important;
+}
+
+.bg-color {
+    background-color: silver;
+}
+
+.slider {
+    background-image: url(../images/banner1.jpg);
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    background: #000;
+    opacity: 0.65;
+}
+
+header nav {
+    display: block;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: #00a3c8;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px
+}
+
+header nav ul li a.appointment {
+    color: #fff;
+    border: 1px solid #00a3c8;
+    background-color: transparent;
+    transition: 0.5s all;
+}
+
+header nav ul li a.appointment:hover {
+    background-color: #00a3c8;
+}
+
+section.login .login-tab-section {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 51%;
+    transform: translateX(-49%);
+    display: flex;
+    padding-bottom: 20px;
+}
+
+section.login .login-tab-section .login-tab {
+    display: block;
+    float: left;
+    margin: 0% 0 0% 1.6%;
+    background: #F1F6F9;
+    padding: 1.5%;
+    border-radius: 1.1em;
+}
+
+section.login .login-tab-section .login-tab .login-tab-img {
+    width: 31%;
+    display: block;
+    float: left;
+}
+
+section.login .login-tab-section .login-tab .login-tab-img img {
+    max-width: 100%;
+    display: block;
+}
+
+section.login .login-tab-section .login-tab .login-tab-text {
+    width: 64.2%;
+    margin-top: 10px;
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+section.login .login-tab-section .login-tab .login-tab-text h3 {
+    color: #3391E7;
+    margin: 0;
+}
+
+section.login .login-tab-section .login-tab .login-tab-text p {
+    color: #3391E7;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+section.login .login-tab-section .login-tab .login-tab-text a {
+    color: rgb(139, 139, 139);
+}
+
+section.login .login-tab-section .login-tab .login-tab-text a:hover {
+    color: #3391E7;
+}
+
+
+/*--------login page---------*/
+
+section.login .login-form-section {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.login .login-form-section .box-login {
+    border: 1px solid #00a3c8;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/*------------registration page----------*/
+
+section.login .registration-form-section {
+    width: 100%;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -47%);
+}
+
+section.login .registration-form-section .box-login {
+    border: 1px solid #00a3c8;
+    padding: 5px;
+    text-align: center;
+}
+
+section.login .registration-form-section .gender {
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+
+/* -----------admin dashboard--------- */
+
+.admin-dashboard {
+    padding-top: 40px;
+}
+
+.admin-dashboard .admin-header ul li {
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+
+/* ----------sidebar.php-------- */
+
+.navbar-title {
+    background: #808285;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.main-navigation-menu {
+    background: white;
+    padding-left: 0;
+}
+
+.dropbtn {
+    color: #808285;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding-left: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 90px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 100%;
+    top: -20%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown button:focus {
+    outline: none;
+}
+
+
+/* -----------dashboard.php---------- */
+
+.admin-dashboard .panel {
+    margin-top: 20px;
+    padding: 50px 25px;
+    border: 1px solid #5b5b60;
+}
+
+.admin-dashboard .panelDiff {
+    padding: 30px;
+}
+
+.admin-dashboard .panel .StepTitle {
+    color: white;
+}
+
+
+/* ------------doctor-specialization------------ */
+
+.doctor-specialization .admin-header {
+    margin-bottom: 50px;
+}
+
+.doctor-specialization .panel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.doctor-specialization-list {
+    padding-top: 50px;
+}
+
+.doctor-specialization-list h5 {
+    margin-bottom: 50px;
+}
+
+
+/* ------------edit-doctor-specialization------------ */
+
+.edit-doctor-specialization .panel {
+    margin-top: 50px;
+}
+
+
+/* ------------edit-pattients-manage------------ */
+
+.edit-pattient-form input,
+.edit-docotor-form input,
+.edit-pattient-form select {
+    margin-bottom: 5px;
+}
+
+.pattient-search-form {
+    display: flex;
+}
+
+.pattient-search-form input {
+    width: 100%;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    box-shadow: none;
+    background-color: transparent;
+    height: 40px;
+    padding: 8px 10px 10px 10px;
+    margin-right: 5px;
+}
+
+.pattient-search-form button {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    height: 40px;
+    padding: 8px 10px 10px 10px;
+    font-size: 14px;
+}
+
+
+/* ---------------------not-found-search-result------------- */
+
+.not-found-search-result {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/* -----------------contact------------ */
+
+.contact {
+    position: relative;
+    transform: translateY(25%);
+}
+
+.contact .left-div {
+    background: #fff;
+    margin-top: 20px;
+}
+
+#gmap {
+    margin-top: 20px;
+}
+
+.pad-left-0 {
+    padding-left: 0;
+}
+
+.contact .contact-info-name {
+    display: block;
+    color: #007bff;
+    text-transform: capitalize;
+    margin: 10px;
+    font-size: 18;
+}
+
+.contact .value {
+    color: #808285;
+    margin: 10px;
+    font-size: 14;
+}
+
+.contact .social-media {
+    padding-bottom: 10px;
+}
+
+.contact .social-media .front {
+    margin: 10px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    padding: 10px;
+}
