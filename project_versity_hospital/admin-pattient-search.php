@@ -14,7 +14,7 @@ if(!$connection){
 	throw new Exception("Cannot connect to database");
 }
 $search = $_POST['search']??'';
-$query = "SELECT * FROM `pattients` WHERE `email` LIKE '{$search}%' ORDER BY `email`";
+$query = "SELECT * FROM `patients` WHERE `email` LIKE '{$search}%' ORDER BY `email`";
 $result = mysqli_query($connection,$query);
 ?>
 <div class="container-fluid admin-dashboard">
@@ -35,7 +35,7 @@ $result = mysqli_query($connection,$query);
                 <div class="row">
                     <div class="col-md-12 doctor-specialization-list">
                         <h5 class="text-center">All Search Result List</h5>
-<?php if(mysqli_num_rows($result)==0){ ?>
+<?php if(!$result || mysqli_num_rows($result)==0){ ?>
 <p class="not-found-search-result">No Search Result found</p>
 <?php }else{ ?>
                         <form method="POST">
